@@ -1,0 +1,11 @@
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.BLL\bin\Debug\OnlineGameStore.BLL.dll
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.BLL\bin\Debug\OnlineGameStore.BLL.pdb
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.BLL\bin\Debug\AutoMapper.dll
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.BLL\bin\Debug\OnlineGameStore.DAL.dll
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.BLL\bin\Debug\EntityFramework.dll
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.BLL\bin\Debug\OnlineGameStore.DAL.pdb
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.BLL\bin\Debug\AutoMapper.xml
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.BLL\bin\Debug\EntityFramework.xml
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.BLL\obj\Debug\OnlineGameStore.BLL.csprojResolveAssemblyReference.cache
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.BLL\obj\Debug\OnlineGameStore.BLL.dll
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.BLL\obj\Debug\OnlineGameStore.BLL.pdb
