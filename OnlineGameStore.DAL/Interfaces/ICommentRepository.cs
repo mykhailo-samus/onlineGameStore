@@ -10,5 +10,6 @@ namespace OnlineGameStore.DAL.Interfaces
         IEnumerable<Comment> GetCommentsByGameKey(string gameKey);
         void Remove(Comment comment);
         void Update(Comment comment);
+        Comment GetCommentById(int id);
     }
 }

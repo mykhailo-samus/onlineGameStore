@@ -9,5 +9,6 @@ namespace OnlineGameStore.BLL.Interfaces
         IEnumerable<CommentDTO> GetCommentsByGameKey(string gameKey);
         void Remove(CommentDTO commentDTO);
         void Update(CommentDTO commentDTO);
+        CommentDTO GetCommentById(int id);
     }
 }

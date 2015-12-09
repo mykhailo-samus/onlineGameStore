@@ -43,5 +43,10 @@ namespace OnlineGameStore.BLL.Services
             Mapper.CreateMap<CommentDTO, Comment>();
             return Mapper.Map<IEnumerable<CommentDTO>>(db.CommentRepository.GetCommentsByGameKey(gameKey));
         }
+        public CommentDTO GetCommentById(int id)
+        {
+            Mapper.CreateMap<CommentDTO, Comment>();
+            return Mapper.Map<CommentDTO>(db.CommentRepository.GetCommentById(id));
+        }
     }
 }

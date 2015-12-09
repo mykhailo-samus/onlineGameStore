@@ -38,5 +38,10 @@ namespace OnlineGameStore.DAL.Repositories
        {
            return context.Comments.Where(x => x.GameKey == gameKey);
        }
+
+       public Comment GetCommentById(int id)
+       {
+           return context.Comments.Find(id);
+       }
     }
 }
