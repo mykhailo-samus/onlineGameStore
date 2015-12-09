@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Newtonsoft.Json;
 
 namespace OnlineGameStore.DAL.Entities
 {
@@ -20,9 +21,12 @@ namespace OnlineGameStore.DAL.Entities
         public string Name { get; set; }
         public string ParentGenre { get; set; }
 
+        [JsonIgnore]
         [ForeignKey("ParentGenre")]
         public virtual Genre Parent { get; set; }
+        [JsonIgnore]
         public virtual ICollection<Genre> Childrens { get; set; }
+        [JsonIgnore]
         public virtual ICollection<Game> Games { get; set; }
     }
 }

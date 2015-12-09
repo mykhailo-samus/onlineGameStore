@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
+using Newtonsoft.Json;
 
 namespace OnlineGameStore.DAL.Entities
 {
@@ -21,8 +22,11 @@ namespace OnlineGameStore.DAL.Entities
         public string Name { get; set; }
         public string Description { get; set; }
 
+        [JsonIgnore]
         public virtual ICollection<Comment> Comments { get; set; }
+        [JsonIgnore]
         public virtual ICollection<Genre> Genres { get; set; }
+        [JsonIgnore]
         public virtual ICollection<PlatformType> PlatformTypes { get; set; }
     }
 }

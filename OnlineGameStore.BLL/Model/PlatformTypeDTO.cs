@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Newtonsoft.Json;
 namespace OnlineGameStore.BLL.Model
 {
     public class PlatformTypeDTO
@@ -15,6 +15,7 @@ namespace OnlineGameStore.BLL.Model
 
         public string Type { get; set; }
 
+        [JsonIgnore]
         public virtual ICollection<GameDTO> Games { get; set; }
     }
 }

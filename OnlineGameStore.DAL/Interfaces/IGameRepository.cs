@@ -13,5 +13,6 @@ namespace OnlineGameStore.DAL.Interfaces
         IEnumerable<Game> GetByPlatform(string type);
         void Remove(Game game);
         void Update(Game game);
+        void Detach(Game game);
     }
 }

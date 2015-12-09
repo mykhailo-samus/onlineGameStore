@@ -21,7 +21,6 @@ namespace OnlineGameStore.BLL.Services
         }
         public void Create(GameDTO GameDTO)
         {
-            Mapper.CreateMap<GameDTO, Game>();
             var game = Mapper.Map<Game>(GameDTO);
             db.GameRepository.Create(game);
         }
@@ -29,42 +28,41 @@ namespace OnlineGameStore.BLL.Services
 
         public void Remove(GameDTO GameDTO)
         {
-            Mapper.CreateMap<GameDTO, Game>();
-            var game = Mapper.Map<Game>(GameDTO);
+            var game = db.GameRepository.GetByKey(GameDTO.GameKey);
+            Mapper.Map(GameDTO, game);
             db.GameRepository.Remove(game);
         }
 
         public void Update(GameDTO GameDTO)
         {
-            Mapper.CreateMap<GameDTO, Game>();
-            var game = Mapper.Map<Game>(GameDTO);
+            var game = db.GameRepository.GetByKey(GameDTO.GameKey);
+            Mapper.Map(GameDTO, game);
             db.GameRepository.Update(game);
+        }
+
+        public void Detach(GameDTO GameDTO)
+        {
+            var game = Mapper.Map<Game>(GameDTO);
+            db.GameRepository.Detach(game);
         }
 
         public GameDTO GetByKey(string GameKey)
         {
-            Mapper.CreateMap<Game, GameDTO>();
             return Mapper.Map<GameDTO>(db.GameRepository.GetByKey(GameKey));
         }
 
         public IEnumerable<GameDTO> GetByGenre(string name)
         {
-            Mapper.CreateMap<Game, GameDTO>();
             return Mapper.Map<IEnumerable<GameDTO>>(db.GameRepository.GetByGenre(name));
         }
 
         public IEnumerable<GameDTO> GetByPlatform(string type)
         {
-            Mapper.CreateMap<Game, GameDTO>();
             return Mapper.Map<IEnumerable<GameDTO>>(db.GameRepository.GetByPlatform(type));
         }
 
         public IEnumerable<GameDTO> GetAll()
         {
-            Mapper.CreateMap<Game, GameDTO>();
-            Mapper.CreateMap<Genre, GenreDTO>();
-            Mapper.CreateMap<PlatformType, PlatformTypeDTO>();
-            Mapper.CreateMap<Comment, CommentDTO>();
             return Mapper.Map<IEnumerable<GameDTO>>(db.GameRepository.GetAll());
         }
     }

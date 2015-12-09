@@ -20,7 +20,6 @@ namespace OnlineGameStore.Web.Controllers
     {
 
         private IGameService gameService;
-        private ICommentService commentService;
         public GamesController(IGameService gameService)
         {
             this.gameService = gameService;
@@ -32,16 +31,14 @@ namespace OnlineGameStore.Web.Controllers
         [HttpGet]
         public IEnumerable<GameVM> GetGames()
         {
-            Mapper.CreateMap<GameDTO, GameVM>();
             return Mapper.Map<IEnumerable<GameVM>>(gameService.GetAll());
         }
     
          //GET /games/5
-        [Route("games/{key}")]
+        [Route("games/{key}", Name = "GetGame")]
         [HttpGet]
         public IHttpActionResult GetGame(string key)
         {
-            Mapper.CreateMap<GameDTO, GameVM>();
             var game = Mapper.Map<GameVM>(gameService.GetByKey(key));
             if (game == null)
             {
@@ -53,7 +50,7 @@ namespace OnlineGameStore.Web.Controllers
 
          //POST /games/update
          [Route("games/update/")]
-         [HttpPost]
+         [HttpPost] 
          public IHttpActionResult Update(GameVM gameVM)
          {
              var sourceGame = gameService.GetByKey(gameVM.GameKey);
@@ -61,14 +58,15 @@ namespace OnlineGameStore.Web.Controllers
              {
                  return NotFound();
              }
-             Mapper.CreateMap<GameDTO, GameVM>();
+
              if (!ModelState.IsValid)
              {
                  return BadRequest(ModelState);
              }
-             var modifiedGame = Mapper.Map<GameVM, GameDTO>(gameVM);
-             gameService.Update(modifiedGame);
-             return StatusCode(HttpStatusCode.NoContent);
+             Mapper.Map(gameVM, sourceGame);
+             
+             gameService.Update(sourceGame);
+             return CreatedAtRoute("GetGame", new { key = sourceGame.GameKey }, gameVM);
          }
 
         // POST Games/new
@@ -80,10 +78,9 @@ namespace OnlineGameStore.Web.Controllers
             {
                 return BadRequest(ModelState);
             }
-            Mapper.CreateMap<GameVM, GameDTO>();
             var game = Mapper.Map<GameDTO>(gameVM);
             gameService.Create(game);
-            return CreatedAtRoute("DefaultApi", new { id = game.GameKey }, gameVM);
+            return CreatedAtRoute("GetGame", new { key = game.GameKey }, gameVM); ;
         }
 
         //POST api/Games/5
@@ -91,14 +88,13 @@ namespace OnlineGameStore.Web.Controllers
         [HttpPost]
         public IHttpActionResult Delete(GameVM gameVM)
         {
-            Mapper.CreateMap<GameDTO, GameVM>();
             var game = gameService.GetByKey(gameVM.GameKey);
             if (game == null)
             {
                 return NotFound();
             }
             gameService.Remove(game);
-            return Ok(gameVM);
+            return Ok();
         }
 
 

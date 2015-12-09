@@ -38,6 +38,10 @@ namespace OnlineGameStore.DAL.Repositories
             context.SaveChanges();
         }
 
+        public void Detach(Game game)
+        {
+            context.Entry(game).State = EntityState.Detached;
+        }
         public Game GetByKey(string gameKey)
         {
                 return context.Games.FirstOrDefault(s =>

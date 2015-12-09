@@ -8,6 +8,8 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using OnlineGameStore.DAL.DBContext;
 using System.Data.Entity;
+using OnlineGameStore.Web.AutoMapper;
+using OnlineGameStore.BLL.AutoMapper;
 
 namespace OnlineGameStore.Web
 {
@@ -20,6 +22,8 @@ namespace OnlineGameStore.Web
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            AutoMapperWebConfiguration.Configure();
+            AutoMapperBLLConfiguration.Configure();
             Database.SetInitializer(new EntitiesContextInitializer());
         }
     }

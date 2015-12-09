@@ -35,12 +35,11 @@ namespace OnlineGameStore.Web.Controllers
             {
                 return NotFound();
             }
-            Mapper.CreateMap<CommentVM, CommentDTO>();
             var comment = Mapper.Map<CommentDTO>(commentVM);
             comment.GameKey = key;
-
+            comment.ParentId = null;
             commentService.Create(comment);
-            return CreatedAtRoute("DefaultApi", new { id = commentVM.Id }, commentVM);
+            return CreatedAtRoute("comments", new { key = comment.GameKey }, comment);
         }
 
         [HttpPost]
@@ -52,26 +51,25 @@ namespace OnlineGameStore.Web.Controllers
                 return BadRequest(ModelState);
             }
 
-            var parentComment = commentService;
+            var parentComment = commentService.GetCommentById(id);
             if (parentComment == null)
             {
                 return NotFound();
             }
-            Mapper.CreateMap<CommentVM, CommentDTO>();
             var comment = Mapper.Map<CommentDTO>(commentVM);
             comment.ParentId = id;
 
+            comment.GameKey = parentComment.GameKey;
             commentService.Create(comment);
-            return CreatedAtRoute("DefaultApi", new { id = comment.Id }, comment);
+            return CreatedAtRoute("comments", new { key = comment.GameKey }, comment);
         }
 
         
         // GET games/{key}/comments
         [HttpGet]
-        [Route("games/{key}/comments")]
+        [Route("games/{key}/comments", Name="comments")]
         public IEnumerable<CommentVM> GetCommentsByGameKey(string key)
         {
-            Mapper.CreateMap<GameDTO, GameVM>();
             return Mapper.Map<IEnumerable<CommentVM>>(commentService.GetCommentsByGameKey(key));
         }
     }

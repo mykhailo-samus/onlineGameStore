@@ -19,8 +19,8 @@ namespace OnlineGameStore.Web.ViewModel
         public int Id { get; set; }
         public string Name { get; set; }
         public string Body { get; set; }
-        public int ParentId { get; set; }
         public string GameKey { get; set; }
+        public int? ParentId { get; set; }
 
        // public virtual ICollection<Comment> Childrens { get; set; }
      //   public virtual Comment Parent { get; set; }
