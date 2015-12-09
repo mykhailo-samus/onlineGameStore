@@ -44,7 +44,7 @@ namespace OnlineGameStore.Web.Controllers
         }
 
         [HttpPost]
-        [Route("comment/{id}/newcomment")]
+        [Route("comments/{id}/newcomment")]
         public IHttpActionResult AddCommentForComment(int id, CommentVM commentVM)
         {
             if (!ModelState.IsValid)

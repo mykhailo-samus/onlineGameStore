@@ -9,12 +9,12 @@ namespace OnlineGameStore.DAL.Entities
 {
     public class Game
     {
-        public Game()
-        {
-            this.Comments = new HashSet<Comment>();
-            this.Genres = new HashSet<Genre>();
-            this.PlatformTypes = new HashSet<PlatformType>();
-        }
+        //public Game()
+        //{
+        //    this.Comments = new HashSet<Comment>();
+        //    this.Genres = new HashSet<Genre>();
+        //    this.PlatformTypes = new HashSet<PlatformType>();
+        //}
 
         [Key]
         public string GameKey { get; set; }

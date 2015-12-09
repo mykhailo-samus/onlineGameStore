@@ -10,10 +10,10 @@ namespace OnlineGameStore.DAL.Entities
 {
     public class Comment
     {
-        public Comment()
-        {
-            this.Childrens = new HashSet<Comment>();
-        }
+        //public Comment()
+        //{
+        //    this.Childrens = new HashSet<Comment>();
+        //}
 
         [Key]
         public int Id { get; set; }

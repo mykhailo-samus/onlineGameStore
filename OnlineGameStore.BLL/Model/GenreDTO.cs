@@ -8,11 +8,11 @@ namespace OnlineGameStore.BLL.Model
 {
     public class GenreDTO
     {
-        public GenreDTO()
-        {
-            this.Games = new HashSet<GameDTO>();
-            this.Childrens = new HashSet<GenreDTO>();
-        }
+        //public GenreDTO()
+        //{
+        //    this.Games = new HashSet<GameDTO>();
+        //    this.Childrens = new HashSet<GenreDTO>();
+        //}
 
         public string Name { get; set; }
         public string ParentGenre { get; set; }

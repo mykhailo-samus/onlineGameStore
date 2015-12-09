@@ -62,6 +62,9 @@ namespace OnlineGameStore.BLL.Services
         public IEnumerable<GameDTO> GetAll()
         {
             Mapper.CreateMap<Game, GameDTO>();
+            Mapper.CreateMap<Genre, GenreDTO>();
+            Mapper.CreateMap<PlatformType, PlatformTypeDTO>();
+            Mapper.CreateMap<Comment, CommentDTO>();
             return Mapper.Map<IEnumerable<GameDTO>>(db.GameRepository.GetAll());
         }
     }

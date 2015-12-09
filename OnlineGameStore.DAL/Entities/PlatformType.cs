@@ -9,10 +9,10 @@ namespace OnlineGameStore.DAL.Entities
 {
     public class PlatformType
     {
-        public PlatformType()
-        {
-            this.Games = new HashSet<Game>();
-        }
+        //public PlatformType()
+        //{
+        //    this.Games = new HashSet<Game>();
+        //}
 
         [Key]
         public string Type { get; set; }

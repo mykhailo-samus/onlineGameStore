@@ -8,12 +8,12 @@ namespace OnlineGameStore.BLL.Model
 {
     public class GameDTO
     {
-        public GameDTO()
-        {
-            this.Comments = new HashSet<CommentDTO>();
-            this.Genres = new HashSet<GenreDTO>();
-            this.PlatformTypes = new HashSet<PlatformTypeDTO>();
-        }
+        //public GameDTO()
+        //{
+        //    this.Comments = new HashSet<CommentDTO>();
+        //    this.Genres = new HashSet<GenreDTO>();
+        //    this.PlatformTypes = new HashSet<PlatformTypeDTO>();
+        //}
 
         public string GameKey { get; set; }
         public string Name { get; set; }

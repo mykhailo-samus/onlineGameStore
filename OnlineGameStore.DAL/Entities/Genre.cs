@@ -10,11 +10,11 @@ namespace OnlineGameStore.DAL.Entities
 {
     public class Genre
     {
-        public Genre()
-        {
-            this.Games = new HashSet<Game>();
-            this.Childrens = new HashSet<Genre>();
-        }
+        //public Genre()
+        //{
+        //    this.Games = new HashSet<Game>();
+        //    this.Childrens = new HashSet<Genre>();
+        //}
 
         [Key]
         public string Name { get; set; }

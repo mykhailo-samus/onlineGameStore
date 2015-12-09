@@ -8,10 +8,10 @@ namespace OnlineGameStore.BLL.Model
 {
     public class CommentDTO
     {
-        public CommentDTO()
-        {
-            this.Childrens = new HashSet<CommentDTO>();
-        }
+        //public CommentDTO()
+        //{
+        //    this.Childrens = new HashSet<CommentDTO>();
+        //}
 
         public int Id { get; set; }
         public string Name { get; set; }
