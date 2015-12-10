@@ -8,6 +8,7 @@ using OnlineGameStore.BLL.Model;
 using OnlineGameStore.BLL.Interfaces;
 using OnlineGameStore.Web.ViewModel;
 using AutoMapper;
+using WebApi.OutputCache.V2;
 
 namespace OnlineGameStore.Web.Controllers
 {
