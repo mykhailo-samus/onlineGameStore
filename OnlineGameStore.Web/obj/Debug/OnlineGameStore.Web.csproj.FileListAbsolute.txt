@@ -1,3 +1,4 @@
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\obj\Debug\OnlineGameStore.Web.csprojResolveAssemblyReference.cache
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\bin\OnlineGameStore.Web.dll.config
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\bin\OnlineGameStore.Web.dll
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\bin\OnlineGameStore.Web.pdb
@@ -39,6 +40,7 @@ C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGame
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\bin\EntityFramework.xml
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\bin\EntityFramework.SqlServer.xml
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\bin\Microsoft.Owin.xml
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\bin\Newtonsoft.Json.xml
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\bin\Ninject.xml
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\bin\Ninject.Extensions.ContextPreservation.xml
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\bin\Ninject.Extensions.NamedScope.xml
@@ -47,12 +49,11 @@ C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGame
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\bin\Ninject.Web.WebApi.xml
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\bin\Ninject.Web.WebApi.OwinHost.xml
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\bin\Ninject.Web.WebApi.WebHost.xml
-C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\bin\System.Web.Http.Owin.xml
-C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\bin\Newtonsoft.Json.xml
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\bin\System.Net.Http.Formatting.xml
-C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\bin\System.Web.Helpers.xml
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\bin\System.Web.Http.xml
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\bin\System.Web.Http.Owin.xml
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\bin\System.Web.Http.WebHost.xml
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\bin\System.Web.Helpers.xml
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\bin\System.Web.Mvc.xml
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\bin\System.Web.Optimization.xml
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\bin\System.Web.Razor.xml
@@ -60,6 +61,5 @@ C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGame
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\bin\System.Web.WebPages.Deployment.xml
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\bin\System.Web.WebPages.Razor.xml
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\bin\Antlr3.Runtime.pdb
-C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\obj\Debug\OnlineGameStore.Web.csprojResolveAssemblyReference.cache
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\obj\Debug\OnlineGameStore.Web.dll
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore\OnlineGameStore.Web\obj\Debug\OnlineGameStore.Web.pdb

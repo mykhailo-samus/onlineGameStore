@@ -80,7 +80,7 @@ namespace OnlineGameStore.Web.Controllers
             }
             var game = Mapper.Map<GameDTO>(gameVM);
             gameService.Create(game);
-            return CreatedAtRoute("GetGame", new { key = game.GameKey }, gameVM); ;
+            return CreatedAtRoute("GetGame", new { key = game.GameKey }, gameVM);
         }
 
         //POST api/Games/5

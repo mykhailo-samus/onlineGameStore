@@ -17,7 +17,7 @@ namespace OnlineGameStore.DAL.Entities
 
         [Key]
         public string Type { get; set; }
-        [JsonIgnore]
+       // [JsonIgnore]
         public virtual ICollection<Game> Games { get; set; }
     }
 }

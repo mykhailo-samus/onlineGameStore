@@ -21,12 +21,12 @@ namespace OnlineGameStore.DAL.Entities
         public string Name { get; set; }
         public string ParentGenre { get; set; }
 
-        [JsonIgnore]
+       // [JsonIgnore]
         [ForeignKey("ParentGenre")]
         public virtual Genre Parent { get; set; }
-        [JsonIgnore]
+      //  [JsonIgnore]
         public virtual ICollection<Genre> Childrens { get; set; }
-        [JsonIgnore]
+      //  [JsonIgnore]
         public virtual ICollection<Game> Games { get; set; }
     }
 }

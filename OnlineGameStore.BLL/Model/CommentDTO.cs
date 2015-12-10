@@ -19,11 +19,11 @@ namespace OnlineGameStore.BLL.Model
         public int? ParentId { get; set; }
         public string GameKey { get; set; }
 
-        [JsonIgnore]
+       // [JsonIgnore]
         public virtual ICollection<CommentDTO> Childrens { get; set; }
-        [JsonIgnore]
+    //    [JsonIgnore]
         public virtual CommentDTO Parent { get; set; }
-        [JsonIgnore]
+     //   [JsonIgnore]
         public virtual GameDTO Game { get; set; }
     }
 }

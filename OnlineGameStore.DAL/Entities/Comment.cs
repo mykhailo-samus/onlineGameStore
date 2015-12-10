@@ -23,11 +23,11 @@ namespace OnlineGameStore.DAL.Entities
         public int? ParentId { get; set; }
         public string GameKey { get; set; }
 
-        [JsonIgnore]
+       // [JsonIgnore]
         public virtual ICollection<Comment> Childrens { get; set; }
-        [JsonIgnore]
+       // [JsonIgnore]
         public virtual Comment Parent { get; set; }
-        [JsonIgnore]
+       // [JsonIgnore]
         public virtual Game Game { get; set; }
     }
 }

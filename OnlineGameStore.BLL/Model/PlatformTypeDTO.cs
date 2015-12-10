@@ -15,7 +15,7 @@ namespace OnlineGameStore.BLL.Model
 
         public string Type { get; set; }
 
-        [JsonIgnore]
+      //  [JsonIgnore]
         public virtual ICollection<GameDTO> Games { get; set; }
     }
 }

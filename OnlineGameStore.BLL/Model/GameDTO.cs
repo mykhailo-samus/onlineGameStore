@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
+//using Newtonsoft.Json;
 namespace OnlineGameStore.BLL.Model
 {
     public class GameDTO
@@ -19,11 +19,11 @@ namespace OnlineGameStore.BLL.Model
         public string Name { get; set; }
         public string Description { get; set; }
 
-        [JsonIgnore]
+       // [JsonIgnore]
         public virtual ICollection<CommentDTO> Comments { get; set; }
-        [JsonIgnore]
+      //  [JsonIgnore]
         public virtual ICollection<GenreDTO> Genres { get; set; }
-        [JsonIgnore]
+       // [JsonIgnore]
         public virtual ICollection<PlatformTypeDTO> PlatformTypes { get; set; }
     }
 }

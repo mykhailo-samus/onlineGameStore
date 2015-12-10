@@ -17,11 +17,11 @@ namespace OnlineGameStore.BLL.Model
         public string Name { get; set; }
         public string ParentGenre { get; set; }
 
-        [JsonIgnore]
+      //  [JsonIgnore]
         public virtual GenreDTO Parent { get; set; }
-        [JsonIgnore]
+     //   [JsonIgnore]
         public virtual ICollection<GenreDTO> Childrens { get; set; }
-        [JsonIgnore]
+      //  [JsonIgnore]
         public virtual ICollection<GameDTO> Games { get; set; }
     }
 }

@@ -39,7 +39,7 @@ namespace OnlineGameStore.Web.Controllers
             comment.GameKey = key;
             comment.ParentId = null;
             commentService.Create(comment);
-            return CreatedAtRoute("comments", new { key = comment.GameKey }, comment);
+            return CreatedAtRoute("comments", new { key = comment.GameKey }, Mapper.Map<CommentVM>(comment));
         }
 
         [HttpPost]
@@ -61,7 +61,7 @@ namespace OnlineGameStore.Web.Controllers
 
             comment.GameKey = parentComment.GameKey;
             commentService.Create(comment);
-            return CreatedAtRoute("comments", new { key = comment.GameKey }, comment);
+            return CreatedAtRoute("comments", new { key = comment.GameKey }, Mapper.Map<CommentVM>(comment));
         }
 
         
