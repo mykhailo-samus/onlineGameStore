@@ -71,11 +71,15 @@ C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\online
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\WebActivatorEx.dll
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\Ninject.Web.Common.OwinHost.dll
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\Ninject.Web.WebApi.OwinHost.dll
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\Serilog.dll
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\WebApi.OutputCache.V2.dll
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\Serilog.FullNetFx.dll
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\System.Web.Razor.dll
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\System.Web.WebPages.Razor.dll
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\System.Web.WebPages.dll
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\Ninject.Web.WebApi.dll
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\Ninject.Extensions.NamedScope.dll
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\WebApi.OutputCache.Core.dll
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\System.Web.WebPages.Deployment.dll
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\OnlineGameStore.BLL.pdb
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\OnlineGameStore.DAL.pdb
@@ -93,6 +97,10 @@ C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\online
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\Ninject.xml
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\Ninject.Web.Common.OwinHost.xml
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\Ninject.Web.WebApi.OwinHost.xml
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\Serilog.pdb
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\Serilog.xml
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\Serilog.FullNetFx.pdb
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\Serilog.FullNetFx.xml
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\System.Web.Razor.xml
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\System.Web.WebPages.Razor.xml
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\System.Web.WebPages.xml
@@ -102,3 +110,5 @@ C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\online
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\obj\Debug\OnlineGameStore.Tests.csprojResolveAssemblyReference.cache
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\obj\Debug\OnlineGameStore.Tests.dll
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\obj\Debug\OnlineGameStore.Tests.pdb
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\Serilog.Sinks.EventLog.dll
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\Serilog.Sinks.EventLog.xml

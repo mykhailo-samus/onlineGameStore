@@ -9,6 +9,7 @@ using OnlineGameStore.BLL.Interfaces;
 using OnlineGameStore.Web.ViewModel;
 using AutoMapper;
 using WebApi.OutputCache.V2;
+using Serilog;
 
 namespace OnlineGameStore.Web.Controllers
 {
@@ -27,13 +28,16 @@ namespace OnlineGameStore.Web.Controllers
         [Route("games/{key}/newcomment")]
         public IHttpActionResult AddCommentForGame(string key, CommentVM commentVM)
         {
+            Log.Debug("User requested POST: games/{key}/newcomment", key);
             if (!ModelState.IsValid)
             {
+                Log.Error("Request is invalid!");
                 return BadRequest(ModelState);
             }
             var game = gameService.GetByKey(key);
             if (game == null)
             {
+                Log.Error("Game with certain key is not found!");
                 return NotFound();
             }
             var comment = Mapper.Map<CommentDTO>(commentVM);
@@ -47,6 +51,7 @@ namespace OnlineGameStore.Web.Controllers
         [Route("comments/{id}/newcomment")]
         public IHttpActionResult AddCommentForComment(int id, CommentVM commentVM)
         {
+            Log.Debug("User requested POST: comments/{id}/newcomment", id);
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
@@ -55,6 +60,7 @@ namespace OnlineGameStore.Web.Controllers
             var parentComment = commentService.GetCommentById(id);
             if (parentComment == null)
             {
+                Log.Error("Parent comment with certain id is not found!");
                 return NotFound();
             }
             var comment = Mapper.Map<CommentDTO>(commentVM);
@@ -68,9 +74,11 @@ namespace OnlineGameStore.Web.Controllers
         
         // GET games/{key}/comments
         [HttpGet]
+        [CacheOutput(ClientTimeSpan = 60, ServerTimeSpan = 60)]
         [Route("games/{key}/comments", Name="comments")]
         public IEnumerable<CommentVM> GetCommentsByGameKey(string key)
         {
+            Log.Debug("User requested GET: games/{key}/comments", key);
             return Mapper.Map<IEnumerable<CommentVM>>(commentService.GetCommentsByGameKey(key));
         }
     }

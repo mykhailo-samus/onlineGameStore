@@ -16,6 +16,8 @@ using AutoMapper;
 using System.Web.Script.Serialization;
 using System.Web.Http.Filters;
 using Newtonsoft.Json;
+using WebApi.OutputCache.V2;
+using Serilog;
 
 namespace OnlineGameStore.Web.Controllers
 {
@@ -31,20 +33,26 @@ namespace OnlineGameStore.Web.Controllers
 
         // GET /games
         [Route("games")]
+        [CacheOutput(ClientTimeSpan = 60, ServerTimeSpan = 60)]
         [HttpGet]
         public IEnumerable<GameVM> GetGames()
         {
+            Log.Debug("User requested GET: /games");
             return Mapper.Map<IEnumerable<GameVM>>(gameService.GetAll());
         }
-    
+        
          //GET /games/5
         [Route("games/{key}", Name = "GetGame")]
+        [CacheOutput(ClientTimeSpan = 60, ServerTimeSpan = 60)]
         [HttpGet]
         public IHttpActionResult GetGame(string key)
         {
+            Log.Debug("User requested GET: /games/{key}", key);
             var game = Mapper.Map<GameVM>(gameService.GetByKey(key));
+            
             if (game == null)
             {
+                Log.Error("Game with certain key is not found!");
                 return NotFound();
             }
 
@@ -56,14 +64,17 @@ namespace OnlineGameStore.Web.Controllers
          [HttpPost] 
          public IHttpActionResult Update(GameVM gameVM)
          {
+             Log.Debug("User requested POST: /games/update");
              var sourceGame = gameService.GetByKey(gameVM.GameKey);
              if (sourceGame == null)
              {
+                 Log.Error("Game with certain key is not found!");
                  return NotFound();
              }
 
              if (!ModelState.IsValid)
              {
+                 Log.Error("Request is not valid!");
                  return BadRequest(ModelState);
              }
              Mapper.Map(gameVM, sourceGame);
@@ -77,8 +88,10 @@ namespace OnlineGameStore.Web.Controllers
         [HttpPost]
         public IHttpActionResult New(GameVM gameVM)
         {
+            Log.Debug("User requested POST: /games/new");
             if (!ModelState.IsValid)
             {
+                Log.Error("Request is not valid!");
                 return BadRequest(ModelState);
             }
             var game = Mapper.Map<GameDTO>(gameVM);
@@ -91,9 +104,11 @@ namespace OnlineGameStore.Web.Controllers
         [HttpPost]
         public IHttpActionResult Delete(GameVM gameVM)
         {
+            Log.Debug("User requested POST: /games/remove");
             var game = gameService.GetByKey(gameVM.GameKey);
             if (game == null)
             {
+                Log.Error("Game with certain key is not found!");
                 return NotFound();
             }
             gameService.Remove(game);
@@ -105,10 +120,12 @@ namespace OnlineGameStore.Web.Controllers
         [HttpGet]
         public HttpResponseMessage Download(string key)
         {
+            Log.Debug("User requested GET: /games/{key}/remove", key);
             var game = gameService.GetByKey(key);
 
             if (game == null)
             {
+               Log.Error("Game with certain key is not found!");
                return Request.CreateResponse(HttpStatusCode.NotFound, "Nonexistent game key! Please, try another value.");
             }
 

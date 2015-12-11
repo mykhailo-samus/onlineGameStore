@@ -85,6 +85,9 @@ C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\online
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\OnlineGameStore.BLL.dll
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\OnlineGameStore.DAL.dll
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\Owin.dll
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\Serilog.dll
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\Serilog.FullNetFx.dll
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\Serilog.Sinks.EventLog.dll
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\System.Net.Http.Formatting.dll
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\System.Web.Helpers.dll
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\System.Web.Http.dll
@@ -97,6 +100,8 @@ C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\online
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\System.Web.WebPages.dll
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\System.Web.WebPages.Razor.dll
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\WebActivatorEx.dll
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\WebApi.OutputCache.Core.dll
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\WebApi.OutputCache.V2.dll
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\WebGrease.dll
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\OnlineGameStore.BLL.pdb
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\OnlineGameStore.DAL.pdb
@@ -113,6 +118,11 @@ C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\online
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\Ninject.Web.WebApi.xml
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\Ninject.Web.WebApi.OwinHost.xml
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\Ninject.Web.WebApi.WebHost.xml
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\Serilog.pdb
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\Serilog.xml
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\Serilog.FullNetFx.pdb
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\Serilog.FullNetFx.xml
+C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\Serilog.Sinks.EventLog.xml
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\System.Net.Http.Formatting.xml
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\System.Web.Http.xml
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\System.Web.Http.Owin.xml
@@ -128,5 +138,3 @@ C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\online
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\obj\Debug\OnlineGameStore.Web.csprojResolveAssemblyReference.cache
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\obj\Debug\OnlineGameStore.Web.dll
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\obj\Debug\OnlineGameStore.Web.pdb
-C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\WebApi.OutputCache.Core.dll
-C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Web\bin\WebApi.OutputCache.V2.dll

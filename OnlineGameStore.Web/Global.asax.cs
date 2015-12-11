@@ -10,6 +10,7 @@ using OnlineGameStore.DAL.DBContext;
 using System.Data.Entity;
 using OnlineGameStore.Web.AutoMapper;
 using OnlineGameStore.BLL.AutoMapper;
+using OnlineGameStore.Web.Logs;
 
 namespace OnlineGameStore.Web
 {
@@ -24,6 +25,7 @@ namespace OnlineGameStore.Web
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AutoMapperWebConfiguration.Configure();
             AutoMapperBLLConfiguration.Configure();
+            LoggingConfiguration.Configure();
             Database.SetInitializer(new EntitiesContextInitializer());
         }
     }

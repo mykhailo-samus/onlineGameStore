@@ -19,6 +19,5 @@ C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\online
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.DAL\bin\Debug\EntityFramework.xml
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.DAL\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.DAL\bin\Debug\Newtonsoft.Json.xml
-C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.DAL\obj\Debug\OnlineGameStore.DAL.csprojResolveAssemblyReference.cache
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.DAL\obj\Debug\OnlineGameStore.DAL.dll
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.DAL\obj\Debug\OnlineGameStore.DAL.pdb
