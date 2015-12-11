@@ -16,8 +16,8 @@ namespace OnlineGameStore.Web.Logs
             Log.Logger = new LoggerConfiguration()
                 .MinimumLevel.Debug()
                 .WriteTo.RollingFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"Logs\Log-{Date}.txt"))
-                         .WriteTo.EventLog("GameStore")
-                         .CreateLogger();
+              //.WriteTo.EventLog("GameStore")
+                .CreateLogger();
         }
     }
 }

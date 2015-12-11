@@ -12,11 +12,12 @@ using System.Web.Http.Description;
 using OnlineGameStore.BLL.Model;
 using OnlineGameStore.BLL.Interfaces;
 using OnlineGameStore.Web.ViewModel;
-using AutoMapper;
 using System.Web.Script.Serialization;
 using System.Web.Http.Filters;
 using Newtonsoft.Json;
 using WebApi.OutputCache.V2;
+using OnlineGameStore.CustomFilters;
+using AutoMapper;
 using Serilog;
 
 namespace OnlineGameStore.Web.Controllers
@@ -35,6 +36,7 @@ namespace OnlineGameStore.Web.Controllers
         [Route("games")]
         [CacheOutput(ClientTimeSpan = 60, ServerTimeSpan = 60)]
         [HttpGet]
+        [PerformanceLog]
         public IEnumerable<GameVM> GetGames()
         {
             Log.Debug("User requested GET: /games");
@@ -45,6 +47,7 @@ namespace OnlineGameStore.Web.Controllers
         [Route("games/{key}", Name = "GetGame")]
         [CacheOutput(ClientTimeSpan = 60, ServerTimeSpan = 60)]
         [HttpGet]
+        [LogIP]
         public IHttpActionResult GetGame(string key)
         {
             Log.Debug("User requested GET: /games/{key}", key);
@@ -126,7 +129,7 @@ namespace OnlineGameStore.Web.Controllers
             if (game == null)
             {
                Log.Error("Game with certain key is not found!");
-               return Request.CreateResponse(HttpStatusCode.NotFound, "Nonexistent game key! Please, try another value.");
+               return Request.CreateResponse(HttpStatusCode.NotFound);
             }
 
             HttpResponseMessage response = new HttpResponseMessage(HttpStatusCode.OK);

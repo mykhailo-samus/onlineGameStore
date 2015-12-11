@@ -110,5 +110,3 @@ C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\online
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\obj\Debug\OnlineGameStore.Tests.csprojResolveAssemblyReference.cache
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\obj\Debug\OnlineGameStore.Tests.dll
 C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\obj\Debug\OnlineGameStore.Tests.pdb
-C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\Serilog.Sinks.EventLog.dll
-C:\Users\Demian\Documents\Visual Studio 2013\Projects\OnlineGameStore_upd\onlineGameStore\OnlineGameStore.Tests\bin\Debug\Serilog.Sinks.EventLog.xml
