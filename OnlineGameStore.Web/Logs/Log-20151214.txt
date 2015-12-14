@@ -1,0 +1,10 @@
+﻿2015-12-14 06:25:51.984 +02:00 [Debug] User requested GET: /games
+2015-12-14 06:25:55.909 +02:00 [Debug] Action : "GetGames" executed for - "3.987" sec
+2015-12-14 06:26:24.742 +02:00 [Debug] User requested GET: /games/"09ec3f87-e8e1-4f55-9b4b-6ff4110be362"
+2015-12-14 06:26:25.718 +02:00 [Debug] User IP address is: "::1"
+2015-12-14 06:26:37.203 +02:00 [Debug] User IP address is: "::1"
+2015-12-14 06:26:45.700 +02:00 [Debug] User requested GET: games/"09ec3f87-e8e1-4f55-9b4b-6ff4110be362"/comments
+2015-12-14 06:34:00.744 +02:00 [Debug] User requested GET: /games
+2015-12-14 06:34:01.947 +02:00 [Debug] Action : "GetGames" executed for - "1.262" sec
+2015-12-14 06:34:10.315 +02:00 [Debug] User requested GET: /games/"09ec3f87-e8e1-4f55-9b4b-6ff4110be362"
+2015-12-14 06:34:10.990 +02:00 [Debug] User IP address is: "::1"

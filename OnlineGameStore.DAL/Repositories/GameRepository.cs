@@ -22,20 +22,17 @@ namespace OnlineGameStore.DAL.Repositories
         public void Create(Game game)
         {
            context.Games.Add(game);
-           context.SaveChanges();
         }
 
 
         public void Remove(Game game)
         {
             context.Games.Remove(game);
-            context.SaveChanges();
         }
 
         public void Update(Game game)
         {
             context.Entry(game).State = EntityState.Modified;
-            context.SaveChanges();
         }
 
         public void Detach(Game game)

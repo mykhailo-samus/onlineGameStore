@@ -22,18 +22,21 @@ namespace OnlineGameStore.BLL.Services
         {
             var comment = Mapper.Map<Comment>(commentDTO);
             db.CommentRepository.Create(comment);
+            db.SaveChanges();
         }
 
         public void Remove(CommentDTO commentDTO)
         {
             var comment = Mapper.Map<Comment>(commentDTO);
             db.CommentRepository.Remove(comment);
+            db.SaveChanges();
         }
 
         public void Update(CommentDTO commentDTO)
         {
             var comment = Mapper.Map<Comment>(commentDTO);
             db.CommentRepository.Update(comment);
+            db.SaveChanges();
         }
         public IEnumerable<CommentDTO> GetCommentsByGameKey(string gameKey)
         {

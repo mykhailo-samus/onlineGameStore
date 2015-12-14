@@ -20,19 +20,16 @@ namespace OnlineGameStore.DAL.Repositories
        public void Create(Comment comment)
        {
            context.Comments.Add(comment);
-           context.SaveChanges();
        }
 
        public void Remove(Comment comment)
        {
            context.Comments.Remove(comment);
-           context.SaveChanges();
        }
 
        public void Update(Comment comment)
        {
            context.Entry(comment).State = EntityState.Modified;
-           context.SaveChanges();
        }
        public IEnumerable<Comment> GetCommentsByGameKey(string gameKey)
        {

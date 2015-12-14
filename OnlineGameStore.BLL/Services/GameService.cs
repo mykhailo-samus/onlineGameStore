@@ -23,6 +23,7 @@ namespace OnlineGameStore.BLL.Services
         {
             var game = Mapper.Map<Game>(GameDTO);
             db.GameRepository.Create(game);
+            db.SaveChanges();
         }
 
 
@@ -31,6 +32,7 @@ namespace OnlineGameStore.BLL.Services
             var game = db.GameRepository.GetByKey(GameDTO.GameKey);
             Mapper.Map(GameDTO, game);
             db.GameRepository.Remove(game);
+            db.SaveChanges();
         }
 
         public void Update(GameDTO GameDTO)
@@ -38,12 +40,14 @@ namespace OnlineGameStore.BLL.Services
             var game = db.GameRepository.GetByKey(GameDTO.GameKey);
             Mapper.Map(GameDTO, game);
             db.GameRepository.Update(game);
+            db.SaveChanges();
         }
 
         public void Detach(GameDTO GameDTO)
         {
             var game = Mapper.Map<Game>(GameDTO);
             db.GameRepository.Detach(game);
+            db.SaveChanges();
         }
 
         public GameDTO GetByKey(string GameKey)

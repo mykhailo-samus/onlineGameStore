@@ -10,6 +10,7 @@ using OnlineGameStore.BLL.Interfaces;
 using OnlineGameStore.DAL.Interfaces;
 using OnlineGameStore.DAL.Repositories;
 using OnlineGameStore.DAL.DBContext;
+using System.Data.Entity;
 
 namespace OnlineGameStore.Web.Ninject
 {
@@ -36,7 +37,7 @@ namespace OnlineGameStore.Web.Ninject
         private void AddBindings()
         {
              kernel.Bind<IUnitOfWork>().To<UnitOfWork>();
-             kernel.Bind<IGameStoreContext>().To<GameStoreContext>();
+             kernel.Bind<DbContext, GameStoreContext>().To<GameStoreContext>();
              kernel.Bind<ICommentRepository>().To<CommentRepository>();
              kernel.Bind<IGameRepository>().To<GameRepository>();
              kernel.Bind<IGameService>().To<GameService>();
